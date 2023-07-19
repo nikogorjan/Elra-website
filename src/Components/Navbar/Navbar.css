@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../../Files/fonts/Helvetica.ttf') format('woff2');
+    
+  }
+
+  @font-face {
+    font-family: 'Helvetica Bold';
+    src: url('../../Files/fonts/Helvetica-Bold.ttf') format('woff2');
+    
+  }
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:  100%;
+    height: 150px;
+    transition: background-color 0.3s ease, height 0.8s ease;
+    z-index: 9998;
+    display: flex; /* Add this */
+  align-items: center; /* Add this */
+  justify-content: center;
+  }
+  
+  .navbar.shrink {
+    background-color: rgb(24,25,30);
+    color: white;
+    height: 70px;
+  }
+  
+  .navbar-content {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+  
+  .centered-paragraphs {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  .centered-paragraphs p {
+    font-family: 'Helvetica';
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    margin-right: 80px;
+    transition: transform 0.3s; /* Add transition for smooth scaling effect */
+    cursor: pointer;
+  }
+
+  .centered-paragraphs p:hover {
+    transform: scale(1.1); /* Scale the element 10% larger */
+
+  }
